@@ -1,5 +1,14 @@
-# Records
-###########################
-# @TODO: Extension Configuration
-# - CHECKBOX Show also other admins
-# - ...
+# cat=limitation/enable/113; type=string; label=Allowed username pattern (Doesn't work actually!!!)
+allowedUserNamePattern =
+# cat=limitation/enable/123; type=string; label=Allowed user email pattern (Doesn't work actually!!!)
+allowedUserEmailAddressPattern =
+# cat=limitation/enable/133; type=string; label=Allowed usergroup uid's (Comma separated list) (Doesn't work actually!!!)
+allowedUserGroupUids =
+# cat=limitation/enable/143; type=string; label=Allowed usergroup name pattern (Doesn't work actually!!!)
+allowedUserGroupNamePattern =
+# cat=limitation/enable/145; type=boolean; label=Show also other backend users with administrator privileges (Doesn't work actually!!!)
+showAdminUsers = 0
+# cat=search/enable/153; type=boolean; label=Activate ajax autocomplete searchbox (Doesn't work actually!!!)
+activeSearchbox = 0
+# cat=search/enable/163; type=options[All applicable and available users (Default)=default,Last users switched to=lastUsed,None (only makes sense if search mode is activated)=none]; label=Default user listing (Doesn't work actually!!!)
+defaultListing = default

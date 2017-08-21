@@ -2,6 +2,7 @@
 
 namespace JosefGlatz\BeuserFastswitch\Hooks\Backend\Toolbar;
 
+use JosefGlatz\BeuserFastswitch\Utility\EmConfiguration;
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
 use TYPO3\CMS\Beuser\Domain\Model\BackendUser;
 use TYPO3\CMS\Beuser\Domain\Repository\BackendUserRepository;
@@ -23,11 +24,17 @@ class BackendUserPreviewToolbarItem implements ToolbarItemInterface
     protected $availableUsers = [];
 
     /**
+     * @var \JosefGlatz\BeuserFastswitch\Domain\Model\Dto\EmConfiguration
+     */
+    protected $emSettings;
+
+    /**
      * Constructor
      */
     public function __construct()
     {
         $this->loadAvailableBeUsers();
+        $this->emSettings = EmConfiguration::getSettings();
     }
 
     /**
